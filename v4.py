@@ -5,7 +5,7 @@ import datetime
 
 # Set up logging
 LOG_DIRECTORY = './logs'
-LOG_FILENAME = f'{datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")}-database-connection-test.log'
+LOG_FILENAME = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S_database-connection-test.log")
 
 if not os.path.exists(LOG_DIRECTORY):
     os.makedirs(LOG_DIRECTORY)
